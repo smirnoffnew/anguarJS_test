@@ -7,7 +7,7 @@
             </div>
         </md-toolbar>
 
-        <md-dialog-content>
+        <md-dialog-content ng-style="{'padding': '20px'}">
             <form name="formValidations"></form>
             <form name="formValidation">
                 <md-input-container class="md-block" flex-gt-sm>
@@ -41,10 +41,10 @@
                         </div>
                     </div>
                 </md-input-container>
-                <md-button ng-click="userForm.cancel()">
+                <md-button class="md-raised" ng-click="userForm.cancel()">
                     cancel
                 </md-button>
-                <md-button type="submit" ng-click="userForm.answer(formValidation)">
+                <md-button class="md-raised" type="submit" ng-click="userForm.answer(formValidation)">
                     Add
                 </md-button>
             </form>
